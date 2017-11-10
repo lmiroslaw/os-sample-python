@@ -4,7 +4,8 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    return "Hello World at ", datetime.datetime.now()
+    d = datetime.datetime.now()
+    return "Hello World at "
 
 if __name__ == "__main__":
     application.run()
