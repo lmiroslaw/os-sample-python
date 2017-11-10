@@ -1,10 +1,10 @@
 from flask import Flask
-from datetime import datetime, date
+from datetime import date
 application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    d = datetime.datetime.now()
+    today=date.today()
     return "Hello World at "
 
 if __name__ == "__main__":
